@@ -1,0 +1,51 @@
+
+  .spare-part-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+ 
+  .spare-part-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .spare-part-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .spare-parts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+  }
+  
+ 
+  @media (max-width: 1200px) {
+    .spare-parts-grid {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .spare-parts-grid {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .spare-parts-grid {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
