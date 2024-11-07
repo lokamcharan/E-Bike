@@ -17,23 +17,23 @@ function SparePartsList() {
           <div key={part.id} className="spare-part-card">
             <img
               src={part.image_url}
-              alt={part.name}
+              alt={part.name} style={{width:"150px" ,height:"125px"}}
               className="spare-part-image"
             />
             <h3>{part.name}</h3>
             <p>{part.description}</p>
             <p>
-              <strong>Price:</strong> ${part.price}
+              <strong>Price:</strong> ₹{part.price}
             </p>
             <p>
               <strong>Stock:</strong> {part.stock}
             </p>
             <button
               style={{
-                color: "white",
-                backgroundColor: "blue",
+                color: "black",
+                backgroundColor: "lightblue",
                 border: "none",
-                borderRadius: "10px",
+                borderRadius: "5px",
               }}
             >
               Buy

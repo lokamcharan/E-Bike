@@ -10,6 +10,7 @@ function Home() {
   return (
     <div>
        <Direct/>
+       
         <SparePartsList/>
         <br></br>
         <Footer/>
